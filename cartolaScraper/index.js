@@ -15,7 +15,7 @@ const paginas = ['https://cartolafc.globo.com/#!/time/cartola-lucianojp', 'https
     await page.goto('https://login.globo.com/login/438?url=https://cartolafc.globo.com', { awaitUntil: 'networkidle0'})
     await page.type('#login', dados.user);
     await page.type('#password', dados.password);
-    
+     
     await Promise.all([
         page.keyboard.press(String.fromCharCode(13)),
         page.waitForNavigation({ waitUntil: 'networkidle0' }),
