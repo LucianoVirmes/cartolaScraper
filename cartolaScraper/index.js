@@ -50,7 +50,7 @@ scrape().then((value) => {
         
         fs.writeFile("times.csv", csv, function (err) {
             if (err) throw err;
-            
+
             console.log('Saved!');
           });
-    }); 
+    });  
